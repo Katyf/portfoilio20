@@ -17,13 +17,13 @@ const Navbar = ({condensed}) => {
         <nav className={`navbar ${condensedClass}`}>
             <ul className={`navbar--list ${condensedClass}`}>
                 <li className='navbar--listitem'>
-                    <a href='' className='navbar--link'>About</a>
+                    <a href='#about' className='navbar--link'>About</a>
                 </li>
                 <li className='navbar--listitem'>
-                    <a href='' className='navbar--link'>Projects</a>
+                    <a href='#projects' className='navbar--link'>Projects</a>
                 </li>
                 <li className='navbar--listitem'>
-                    <a href='' className='navbar--link'>Contact</a>
+                    <a href='#contact' className='navbar--link'>Contact</a>
                 </li>
             </ul>
         </nav>

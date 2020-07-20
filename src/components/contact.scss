@@ -21,6 +21,14 @@
     font-size: 50px;
     font-weight: 900;
     height: 80px;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 950px){
+      font-size: 3rem;
+      height: 130px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
   }
 
   .transition-item {
@@ -38,6 +46,10 @@
 
     &.true {
       width: 75%;
+      @media screen and (max-width: 950px){
+        width: 50%;
+
+      }
     }
   }
 
@@ -46,4 +58,29 @@
     color: #353434;
   }
 
+  &--link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      height: 45px;
+      width: 30px;
+    }
+  }
+
+  &--email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      height: 30px;
+      width: 45px;
+    }
+  }
+
+  &--address {
+    font-size: 16px;
+  }
 }

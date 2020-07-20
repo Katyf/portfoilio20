@@ -38,9 +38,11 @@ export const Hero = () => {
         if (!started)
             setInterval(() => {
                 setStarted(true);
+                setItems([]);
                 reset();
         }, 13000);
         return () => {
+            setItems([]);
             clearInterval();
             clearTimeout();
         };

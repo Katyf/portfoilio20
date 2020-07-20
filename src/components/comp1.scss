@@ -3,6 +3,23 @@
   align-items: center;
   height: 100vh;
   scroll-snap-align: start;
+  scroll-behavior: smooth;
+
+  &.projects {
+    justify-content: center;
+
+    svg {
+      margin: 20px auto;
+      display: block;
+    }
+  }
+
+  &.main {
+    @media screen and (max-width: 950px) {
+      display: block;
+    }
+
+  }
 }
 
 .comp1 {
@@ -13,6 +30,11 @@
   width: 65%;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 950px) {
+    width: 100%;
+    height: 70vh;
+    padding: 2rem;
+  }
 }
 
 .comp2 {
@@ -23,6 +45,11 @@
   width: 35%;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 950px) {
+    width: 100%;
+    height: 30vh;
+  }
 
   &--content {
     overflow: hidden;
@@ -47,16 +74,28 @@
   height: 0;
   opacity: 0;
 
+  @media screen and (max-width: 950px) {
+    font-size: 3em;
+    line-height: 30px;
+  }
+
   &.appear {
     animation-name: appear;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+
+    @media screen and (max-width: 950px) {
+      animation-name: appearMobile;
+    }
   }
 
   &.flip {
     animation-name: flip;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    @media screen and (max-width: 950px) {
+      animation-name: flipMobile;
+    }
   }
 }
 
@@ -74,6 +113,19 @@
   }
 }
 
+@keyframes appearMobile {
+  0% {
+    opacity: 0;
+    height: 0;
+    color: #8fa5b6;
+  }
+
+  100% {
+    opacity: 1;
+    height: 30px;
+    color: #28d79f;
+  }
+}
 
 @keyframes flip {
   0% {
@@ -84,6 +136,18 @@
   }
   100% {
     transform: perspective(600px) rotateX(0deg);
+  }
+}
+
+@keyframes flipMobile {
+  0% {
+    transform: perspective(300px) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(300px) rotateX(180deg);
+  }
+  100% {
+    transform: perspective(300px) rotateX(0deg);
   }
 }
 

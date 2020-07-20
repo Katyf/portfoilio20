@@ -8,7 +8,7 @@ export const Comp1 = () => {
     const props = useSpring({opacity: 1, marginTop: 0, from: {opacity: 0, marginTop: -500}});
 
     return (
-        <div className='section main'>
+        <div id='about' className='section main'>
             <Hero />
             <div className='comp2'>
                 <div className='comp2--content'>

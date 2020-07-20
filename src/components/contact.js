@@ -33,7 +33,7 @@ export const Contact = () => {
     );
 
     return (
-        <div className='section contact' ref={elRef}>
+        <div id='contact' className='section contact' ref={elRef}>
             <div className='contact--block'>
                 <div className='contact--title'>
                     {shouldShow &&
@@ -45,8 +45,11 @@ export const Contact = () => {
                 </div>
 
                 <div className='contact--icons'>
-                    <IoIosAt />
-                    <IoLogoLinkedin />
+                    <div className='contact--email'>
+                        <IoIosAt />
+                        <div className='contact--address'>katy.feng.14@gmail.com</div>
+                    </div>
+                    <a className='contact--link linkedin' href='http://linkedin.com/in/katyfeng' target='_blank'><IoLogoLinkedin /></a>
                 </div>
             </div>
         </div>

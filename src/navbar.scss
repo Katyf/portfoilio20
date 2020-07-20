@@ -6,13 +6,17 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 calc(6rem - 40px);
+  padding: 0 calc(6rem - 15px);
   justify-content: space-between;
   box-sizing: border-box;
   z-index: 99;
   background: #FF3C38;
   height: 60px;
   transition: top 0.5s ease-in-out;
+
+  @media screen and (max-width: 950px){
+    padding: 0 calc(2rem - 15px);
+  }
 
   &.condensed {
     top: 0;
@@ -70,10 +74,20 @@
     &.condensed {
       margin-top: 1em;
     }
+
+    @media screen and (max-width: 950px){
+      margin-top: 250px;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 
   &--listitem {
     margin: 0 40px;
+    @media screen and (max-width: 950px){
+      margin: 0 15px;
+      font-size: 11px;
+    }
   }
 
   &--link {
@@ -83,6 +97,10 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
+    @media screen and (max-width: 950px){
+      font-size: 11px;
+      letter-spacing: 4px;
+    }
   }
 }
 
