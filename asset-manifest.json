@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfoilio20/static/css/main.e954b62a.chunk.css",
+    "main.js": "/portfoilio20/static/js/main.b7922a1f.chunk.js",
+    "main.js.map": "/portfoilio20/static/js/main.b7922a1f.chunk.js.map",
+    "runtime-main.js": "/portfoilio20/static/js/runtime-main.8bf3d56d.js",
+    "runtime-main.js.map": "/portfoilio20/static/js/runtime-main.8bf3d56d.js.map",
+    "static/js/2.078d7a09.chunk.js": "/portfoilio20/static/js/2.078d7a09.chunk.js",
+    "static/js/2.078d7a09.chunk.js.map": "/portfoilio20/static/js/2.078d7a09.chunk.js.map",
+    "index.html": "/portfoilio20/index.html",
+    "precache-manifest.52f335dacdc412daaa897a2b1ef99938.js": "/portfoilio20/precache-manifest.52f335dacdc412daaa897a2b1ef99938.js",
+    "service-worker.js": "/portfoilio20/service-worker.js",
+    "static/css/main.e954b62a.chunk.css.map": "/portfoilio20/static/css/main.e954b62a.chunk.css.map",
+    "static/js/2.078d7a09.chunk.js.LICENSE.txt": "/portfoilio20/static/js/2.078d7a09.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bf3d56d.js",
+    "static/js/2.078d7a09.chunk.js",
+    "static/css/main.e954b62a.chunk.css",
+    "static/js/main.b7922a1f.chunk.js"
+  ]
+}
