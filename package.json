@@ -2,7 +2,7 @@
   "name": "portfolio-2020",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://katyf.github.io/portfoilio20",
+  "homepage": "https://katyfeng.com",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
